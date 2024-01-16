@@ -6,11 +6,27 @@
     .about-containers {
         flex-wrap: wrap;
     }
+    footer {
+        margin-top: 5rem;
+        height: fit-content;
+        margin-bottom: 0;
+    }
+    #contact{
+        display: flex;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
+    }
+    nav {
+        height: fit-content;
+        padding: 10px;
+        justify-content: center;
+        background-color: white;
+        gap: 5rem;
     }
     #hamburger-nav {
         display: flex;
@@ -41,35 +57,56 @@
 }
 
 @media screen and (max-width: 600px) {
-    #contact, footer {
-        height: 40vh;
+    #contact {
+        height: auto;
     }
     #profile {
-        height: 83vh;
+        height: 85vh;
         margin-bottom: 0;
+    }
+    nav {
+        height: fit-content;
+        padding: 10px;
+        justify-content: center;
+        background-color: #e2d9cd;
     }
     article {
         font-size: 1rem;
     }
+    footer {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+    footer p{
+        padding: 5px;
+        font-size: 0.75rem;
+    }
     footer nav {
         height: fit-content;
-        margin-bottom: 2rem;
+        justify-content: center;
     }
-    .about-containers, .contact-info-upper-container, 
+    .about-containers, 
     .btn-container {
         flex-wrap: wrap;
     }
-    .contact-info-container{
-        margin: 0;
+    .contact-info-upper-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
     }
-    .contact-info-container p, .nav-links li a{
+    .contact-input{
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-links li a{
         font-size: 1rem;
     }
     .experience-sub-title{
         font-size: 1.25rem;
     }
     .logo{
-        font-size: 1.5 rem;
+        font-size: 1.5rem;
     }
     .nav-links{
         flex-direction: column;
@@ -78,7 +115,7 @@
     }
     .section-pic-container{
         width: auto;
-        height: 46vh;
+        height: 40vh;
         justify-content: center;
     }
     .section-text-p2{
@@ -90,4 +127,5 @@
     .text-container{
         text-align: justify;
     }
+    
 }
