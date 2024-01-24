@@ -15,7 +15,8 @@ html {
     scroll-behavior: smooth;
 }
 p {
-    color: rgb(85, 85, 85)
+    color: black;
+    font-weight: 400;
 }
 
 /* TRANSITION */
@@ -148,7 +149,7 @@ a:hover {
 section {
     padding-top: 10vh;
     height: 100vh;
-    margin: auto 20px;
+    margin: auto 25px;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -164,7 +165,7 @@ section {
     margin: 0;
 }
 .profile-section{
-    background-color: rgb(250,240,230);
+    background-color: #e2d9cd;
     width: 100%;
 }
 .section-pic-container {
@@ -239,14 +240,13 @@ section {
 #about {
     position: relative;
     padding-top: 15vh;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     background-color: black;
     margin: auto 0;
     color: white;
 }
 .about-container {
-    
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -299,9 +299,6 @@ h4{
 }  
 
 /* EXPERIENCE */
-#experience {
-    position: relative;
-}
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -340,7 +337,7 @@ article .icon {
 /* PROJECTS */
 #projects {
     position: relative;
-    background-color: #b5bdac;
+    background-color: #e2d9cd;
     margin: 0;
 }  
 .color-container {
@@ -496,7 +493,6 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 .contact-input:hover{
-    border-color: rgb(74, 74, 212);
     transition: all 0.3 ease-in-out;
 }
 .contact-left textarea{
@@ -512,18 +508,19 @@ article .icon {
 footer{
     height: 30px;
     margin: 0;
-    background-color: #e2d9cd;
 }
 footer p {
     text-align: center;
     padding-bottom: 10px;
-    background-color: #e2d9cd;
+    background-color: black;
+    color: white
 }
 .footer-nav {
+    font-weight: 600;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-    background-color: #e2d9cd;
+    background-color: black;
 }
 .footer-links-container {
     gap: 2rem;
