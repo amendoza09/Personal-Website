@@ -33,9 +33,10 @@ nav,
     z-index:1;
     width: 70%;
     height: 4rem;
-    margin: 10px;
+    margin: 15px;
     background-color: white;
     border-radius: 5rem;
+    border: 0.1rem black solid;
     box-sizing: border-box;
     position: fixed;
     left:50%;
@@ -45,7 +46,7 @@ nav,
     text-align: center;
 }
 .nav-links {
-    gap: 2rem;
+    gap: 3rem;
     list-style: none;
     font-size: 1.5rem;
 }
@@ -163,7 +164,7 @@ section {
     margin: 0;
 }
 .profile-section{
-    background-color: #b5bdac;
+    background-color: rgb(250,240,230);
     width: 100%;
 }
 .section-pic-container {
@@ -203,6 +204,9 @@ section {
     cursor: pointer;
     height: 2rem;
 }
+.invert {
+    filter: invert(100%);
+}
 
 /* BUTTONS */
 .btn-conatiner {
@@ -237,10 +241,12 @@ section {
     padding-top: 15vh;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #e2d9cd;
+    background-color: black;
     margin: auto 0;
+    color: white;
 }
 .about-container {
+    
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
