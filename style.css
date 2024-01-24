@@ -3,7 +3,6 @@
 
 *{
     margin: 0;
-    padding: 0;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -356,8 +355,8 @@ article .icon {
 }
 /* FOOTER */
 footer{
-    height: 26vh;
-    margin: 0 1rem;
+    height: auto;
+    margin: 3rem 0;
     background-color: #e2d9cd;
 }
 footer p {
