@@ -18,6 +18,13 @@ p {
     color: black;
     font-weight: 400;
 }
+.emphasize-color {
+    color: #9CAF88;
+    font-weight: bolder;
+    font-size:larger;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
 
 /* TRANSITION */
 a, .btn {
@@ -165,8 +172,8 @@ section {
     margin: 0;
 }
 .profile-section{
-    background-color: #e2d9cd;
     width: 100%;
+    background-color: #EAE3DB;
 }
 .section-pic-container {
     display: flex;
@@ -240,10 +247,10 @@ section {
 #about {
     position: relative;
     padding-top: 15vh;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: black;
-    margin: auto 0;
+    margin: auto;
     color: white;
 }
 .about-container {
@@ -270,15 +277,13 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background-color: white;
     border-radius: 2rem;
-    border: rgb(50, 50, 50) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
     text-align: center;
     margin-bottom: 2rem;
 }
 .section-container {
-    gap: 4rem;
+    gap: 3rem;
 }
 .section-pic-container {
     height: 450px;
@@ -328,8 +333,7 @@ article {
 }
 article .icon{
     cursor: default;
-}
-  
+} 
 article .icon {
     cursor: default;
 }
@@ -506,8 +510,8 @@ article .icon {
 }
 /* FOOTER */
 footer{
-    height: 26vh;
-    margin: 0 1rem;
+    height: 20vh;
+    bottom: 0px;
     background-color: #e2d9cd;
 }
 footer p {
