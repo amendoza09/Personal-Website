@@ -181,8 +181,8 @@ section {
 .section-pic-container {
     display: flex;
     object-fit: fill;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: auto 0;
 }
 .section-text {
@@ -249,6 +249,7 @@ section {
 /* ABOUT SECTION */
 #about {
     position: relative;
+    justify-content: center;
     padding-top: 15vh;
     padding-left: 30px;
     padding-right: 30px;
@@ -270,7 +271,7 @@ section {
     display: flex;
 }
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 .arrow {
     position: absolute;
@@ -338,7 +339,7 @@ article .icon {
 /* PROJECTS */
 #projects {
     position: relative;
-    background-color: #e2d9cd;
+    background-color: #EAE3DB;
     margin: 0;
 }  
 .color-container {
@@ -452,7 +453,7 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #e2d9cd;
+    background-color: #EAE3DB;
     margin: 0;
 }
 .contact-info-upper-container{
