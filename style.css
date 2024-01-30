@@ -1,6 +1,7 @@
 /*GENERAL*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,400;0,600;1,300;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 
 *{
     margin: 0;
@@ -20,12 +21,14 @@ p {
 }
 .emphasize-color {
     color: #9CAF88;
-    font-weight: bolder;
-    font-size:larger;
+    font-weight: 600;
     text-decoration: underline;
     text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.5rem;
+    font-family: 'Song Myung', serif;
+    font-stretch: ultra-expanded;
 }
-
 /* TRANSITION */
 a, .btn {
     transition: all 300ms ease;
@@ -304,12 +307,6 @@ h4{
 }  
 
 /* EXPERIENCE */
-.experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-}
 .experience-details-container {
     display: flex;
     justify-content: center;
@@ -350,7 +347,7 @@ article .icon {
 }
 .project-img {
     width: 500px;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
     display: block;
 }
@@ -512,7 +509,6 @@ article .icon {
 footer{
     height: 20vh;
     bottom: 0px;
-    background-color: #e2d9cd;
 }
 footer p {
     text-align: center;
@@ -521,7 +517,6 @@ footer p {
     color: white
 }
 .footer-nav {
-    font-weight: 600;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
