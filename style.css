@@ -513,18 +513,19 @@ article .icon {
 /* FOOTER */
 footer{
     height: 20vh;
-    bottom: 0px;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
 }
 footer p {
     text-align: center;
     padding-bottom: 10px;
-    background-color: black;
     color: white
 }
 .footer-nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 16vh;
     background-color: black;
 }
 .footer-links-container {
