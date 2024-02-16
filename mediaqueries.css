@@ -87,6 +87,7 @@
     .about-container {
         margin-top: 0;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 

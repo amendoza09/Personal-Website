@@ -7,15 +7,14 @@ function toggleMenu() {
 
 document.onscroll = function() {
     const abt = document.querySelector('#about');
-    const proj = document.querySelector('#projects');
     const nav = document.querySelector('nav');
-    const a = document.querySelector('a');
+    const links = document.querySelectorAll('a');
     
-    if ((abt.getBoundingClientRect().top <= 20) && (abt.getBoundingClientRect().bottom > 20)) {
+    if ((abt.getBoundingClientRect().top <= 20) && (abt.getBoundingClientRect().bottom >= 20)) {
         nav.classList.add('light');
-        a.classList.add('light');
+        links.forEach(x=>x.classList.add('light'));
     } else {
         nav.classList.remove('light');
-        a.classList.remove('light');
+        links.forEach(x=>x.classList.remove('light'));;
     }
   }
