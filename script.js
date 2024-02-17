@@ -10,7 +10,7 @@ document.onscroll = function() {
     const nav = document.querySelector('nav');
     const links = document.querySelectorAll('a');
     
-    if ((abt.getBoundingClientRect().top <= 20) && (abt.getBoundingClientRect().bottom >= 20)) {
+    if ((abt.getBoundingClientRect().top <= 25) && (abt.getBoundingClientRect().bottom >= 25)) {
         nav.classList.add('light');
         links.forEach(x=>x.classList.add('light'));
     } else {
