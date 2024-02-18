@@ -272,7 +272,7 @@ section {
     display: flex;
 }
 .about-pic {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 .arrow {
     position: absolute;
@@ -296,7 +296,8 @@ section {
 .section-container-outside{
     margin: 1rem;
     justify-content: center;
-    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 h4 {
     margin-top: 0.2rem;
@@ -309,13 +310,11 @@ h4 {
 .column {
     float: left;
     width: 50%;
-    gap: 10px;
 }
 .section-container-outside .column {
     width: 50%;
-    padding-right: 5px;
 }
-.row {
+.row:after {
     content: "";
     clear: both;
 } 
@@ -325,12 +324,16 @@ h4 {
 
 /* EXPERIENCE */
 .experience-details-container {
-    display: flex;
-    justify-content: center;
     flex-direction:row;
-    margin: 2rem;
     gap: 3rem;
+    display: flex;
+    margin: 3rem;
+    -webkit-mask-image: linear-gradient(to right, #0000, #000 15%, #000 85%,#0000);
 }  
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;
+}
 .article-container {
     text-align: initial;
     flex-wrap: wrap;
@@ -359,9 +362,30 @@ article .icon {
     margin: 0;
     justify-content: center;
 }  
+.scroll {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    display: flex;
+    gap: 3rem;
+    align-items: start;
+    padding: var(--size-10);
+}
+.list-begin {
+    margin-left: 10rem;
+}
+.list-end {
+    margin-right: 10rem;
+}
+.scroll > div {
+    block-size: var(--size-10);
+    aspect-ratio: var(--ratio-square);
+    background-color: var(--surface-2);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-2);
+
+}
 .color-container {
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
 }
 .project-img {
     width: 500px;
@@ -381,7 +405,6 @@ article .icon {
 .proj-details-container {
     flex: 1;
     display:inline-block;
-    border-radius: 2rem;
     border: rgb(50, 50, 50) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
