@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
     <script src="script.js" defer></script>
-    <script src="Contact.js" defer></script>
 </head>
 <body>
     <nav id="desktop-nav" class="top-nav">
@@ -274,12 +273,12 @@
         </div>
         <p class="section-text-p1">Or Leave a Message</p>
         <div class="contact-info-container">
-            <form action="https://api.web3forms.com/submit" action="Contact.js" method="POST" class="contact-left">
+            <form id="email-form" action="/submit" method="POST" class="contact-left"> <!-- action="https://api.web3forms.com/submit" -->
                 <input type="hidden" name="access_key" value="19b84ffc-e366-4bf8-9af7-38596f3c1bd7">
-                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
-                <input type="text" name="email" placeholder="Your Email" class="contact-input" required>
-                <input type="text" name="subject" placeholder="Subject" class="contact-input">
-                <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                <input id="name" type="text" placeholder="Your Name" class="contact-input" required>
+                <input id="email" type="text" placeholder="Your Email" class="contact-input" required>
+                <input id="subject" type="text" placeholder="Subject" class="contact-input">
+                <textarea id="message" placeholder="Your Message" class="contact-input" required></textarea>
                 <button class="btn btn-color" type="submit">
                     Submit
                 </button>

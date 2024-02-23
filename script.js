@@ -17,4 +17,24 @@ document.onscroll = function() {
         nav.classList.remove('light');
         links.forEach(x=>x.classList.remove('light'));;
     }
-  }
+}
+
+document.getElementById('email-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData
+      });
+
+      const data = await response.json();
+      console.log(data);
+      alert(data.message);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred');
+    }
+});
