@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const { MongoClient } = require('mongodb');
 
-const PORT = 3000;
+const PORT = 55000;
 const MONGODB_URI = "mongodb+srv://mendozaa01:1m6VR6pTol0hLtb3@cluster01.ts9ryvj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01";
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -34,7 +34,7 @@ app.post('/submit', async (req, res) => {
     res.json({ message: 'Email added successfully', result });
   } catch (error) {
     console.error('Error inserting email:', error);
-    res.status(500).json({ error: 'An error occurred' });
+    res.status(500).json({ error: 'contact.js error occurred' });
   }
 });
 

@@ -20,21 +20,23 @@ document.onscroll = function() {
 }
 
 document.getElementById('email-form').addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
+  event.preventDefault();
+  const form = event.target;
+  const formData = new FormData(form);
 
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData
-      });
+  try {
+    console.log('Form Data:', formData);
 
-      const data = await response.json();
-      console.log(data);
-      alert(data.message);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('An error occurred');
-    }
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData
+    });
+
+    const data = await response.json();
+    console.log('Response Data:', data);
+    alert(data.message);
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    alert('script.js error occurred');
+  }
 });
