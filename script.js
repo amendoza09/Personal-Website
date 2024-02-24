@@ -19,7 +19,7 @@ document.onscroll = function() {
     }
 }
 
-document.getElementById('email-form').addEventListener('submit', async (event) => {
+document.getElementById("email-form").addEventListener("submit", async (event) => {
   event.preventDefault();
   const form = event.target;
   const formData = new FormData(form);
