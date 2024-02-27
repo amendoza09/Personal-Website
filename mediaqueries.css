@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
+    section {
+        height: 100vh;
         margin-bottom: 6rem;
     }
     .about-containers {
@@ -36,18 +36,13 @@
     }
     #hamburger-nav {
         display: flex;
-        background-color: none;
         position: fixed;
         padding: 10px;
         width: 95%;
         z-index: 1;
     }
     .hamburger-menu {
-        background-color: white;
         padding: 15px;
-        border-radius: 100%;
-        border: rgb(50, 50, 50) 0.1rem solid;
-        border-color: rgb(163, 163, 163);
     }
     #profile, .section-container {
         display: block;
@@ -99,6 +94,9 @@
     }
     .column {
         width: 100%;
+    }
+    footer p {
+        color: white;
     }
 }
 
@@ -182,6 +180,9 @@
     }
     .text-container{
         text-align: justify;
+    }
+    footer a {
+        color: white;
     }
 }
 
