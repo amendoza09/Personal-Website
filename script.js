@@ -8,18 +8,15 @@ function toggleMenu() {
 document.onscroll = function() {
     const abt = document.querySelector('#about');
     const nav = document.querySelector('nav');
-    const links = document.querySelectorAll('a');
     const burgerLinks = document.querySelectorAll('a')
-    const burger_icon = document.querySelector('img');
+    const burger_icon = document.querySelector('#hamburger-nav');
     
     if ((abt.getBoundingClientRect().top <= 30) && (abt.getBoundingClientRect().bottom >= 30)) {
         nav.classList.add('light');
-        links.forEach(x=>x.classList.add('light'));
         burgerLinks.forEach(x=>x.classList.add('invert'));
         burger_icon.classList.add('invert');
     } else {
         nav.classList.remove('light');
-        links.forEach(x=>x.classList.remove('light'));
         burgerLinks.forEach(x=>x.classList.remove('invert'));
         burger_icon.classList.remove('invert');
     }
