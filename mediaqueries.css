@@ -47,9 +47,6 @@
     #profile, .section-container {
         display: block;
     }
-    .arrow {
-        display: none;
-    }
     section, .section-container, .proj-details-container {
         height: auto;
         justify-content: center;

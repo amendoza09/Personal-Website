@@ -245,11 +245,6 @@ section {
 .about-pic {
     border-radius: 0.5rem;
 }
-.arrow {
-    position: absolute;
-    right: 5rem;
-    bottom: 2.5rem;
-}
 .details-container {
     padding: 1rem;
     flex: 1;
@@ -407,7 +402,7 @@ article .icon {
 .article-container::after {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: 1;
     border: 2px solid white;
     border-radius: inherit;
     opacity: 0;
