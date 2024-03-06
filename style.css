@@ -533,16 +533,16 @@ footer{
     text-align: center;
     background-color: black;
 }
-footer p {
+footer a , footer p{
     text-align: center;
     padding-bottom: 10px;
-    color: white
+    color: white;
 }
 .footer-nav {
     justify-content: space-around;
     align-items: center;
     height: 16vh;
-    background-color: black;
+
 }
 .footer-links-container {
     gap: 2rem;
