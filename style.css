@@ -294,6 +294,7 @@ h4 {
     gap: 3rem;
     display: flex;
     margin: 3rem;
+    width: auto;
     -webkit-mask-image: linear-gradient(to right, #0000, #000 15%, #000 85%,#0000);
 }  
 ::-webkit-scrollbar {
